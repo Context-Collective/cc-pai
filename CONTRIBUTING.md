@@ -44,7 +44,7 @@ Pousse régulièrement, même si c'est en work-in-progress.
 
 ### 3. Ouvre une discussion
 
-- Crée une **Issue** ou une **Discussion** GitHub pour présenter ton approche
+- Crée une [Discussion](https://github.com/Context-Collective/cc-pai/discussions) pour présenter ton approche
 - Explique ce que tu explores, pourquoi, où tu en es
 - Invite les autres à regarder ta branche
 
@@ -119,3 +119,7 @@ On préfère :
 ---
 
 L'important c'est de construire ensemble, pas de suivre un process.
+
+---
+
+**Questions ?** → [Discussions](https://github.com/Context-Collective/cc-pai/discussions)
