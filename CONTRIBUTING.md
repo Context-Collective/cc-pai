@@ -4,11 +4,11 @@ cc-pai est un projet collaboratif ouvert. On valorise l'expérimentation et la d
 
 ## Rejoindre le projet
 
-1. **Demande un accès** : Ouvre une [Issue](https://github.com/contexte-collectif/cc-pai/issues) ou contacte un membre
+1. **Demande un accès** : Ouvre une [Issue](https://github.com/Context-Collective/cc-pai/issues) ou contacte un membre
 2. **Une fois accepté**, tu es ajouté comme collaborateur
 3. **Clone le repo** :
    ```bash
-   git clone https://github.com/contexte-collectif/cc-pai.git
+   git clone https://github.com/Context-Collective/cc-pai.git
    cd cc-pai
    ```
 4. Tu peux maintenant créer et pousser tes branches directement

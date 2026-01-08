@@ -13,7 +13,7 @@ cc-pai s'inspire des travaux de [Daniel Miessler](https://danielmiessler.com/blo
 ## Installation
 
 ```bash
-git clone https://github.com/contexte-collectif/cc-pai.git
+git clone https://github.com/Context-Collective/cc-pai.git
 cd cc-pai
 ```
 
@@ -133,7 +133,7 @@ Articles et vidéos qui ont inspiré ce projet :
 
 - **Inspiration** : [Daniel Miessler](https://danielmiessler.com/) - Personal AI Infrastructure
 - **Base technique** : [Anthropic Skills](https://github.com/anthropics/skills) - Format de skills
-- **Développement** : [Contexte Collectif](https://github.com/contexte-collectif)
+- **Développement** : [Context Collective](https://github.com/Context-Collective)
 
 ## Licence
 
