@@ -58,8 +58,9 @@ skills/mon-skill/
 
 ```
 cc-pai/
-├── skills/                    # Skills disponibles
-│   └── skill-creator/         # Skill pour créer des skills
+├── .claude/
+│   └── skills/                # Skills Claude Code
+│       └── skill-creator/     # Skill pour créer des skills
 ├── CLAUDE.md                  # Instructions pour Claude Code
 ├── README.md                  # Ce fichier
 └── CONTRIBUTING.md            # Guide de contribution
