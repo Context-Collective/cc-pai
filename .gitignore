@@ -50,8 +50,12 @@ Thumbs.db
 logs/
 
 # PAI Instance (personnel - ne pas versionner)
+pai/.env
 pai/context/ME.md
 pai/state/CURRENT.md
 pai/memory/**/*
 !pai/memory/.gitkeep
 !pai/memory/sessions/.gitkeep
+
+# Skills personnelles (non partagées)
+pai/skills/koality-pm/

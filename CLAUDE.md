@@ -59,6 +59,19 @@ Chaque skill a un fichier `SKILL.md` avec :
 2. Cherche les sessions liées dans `pai/memory/sessions/`
 3. Synthétise : état actuel, décisions, actions en suspens
 
+## Secrets & Credentials
+
+Les credentials sont stockés dans `pai/.env` (gitignored), JAMAIS dans `ME.md`.
+
+- `pai/.env.example` - Template versionné (sans valeurs)
+- `pai/.env` - Valeurs réelles (gitignored)
+
+Les skills lisent les credentials via variables d'environnement :
+```bash
+# Exemple dans une skill
+curl "$KOALITY_PM_URL/api/tasks"
+```
+
 ## Conventions
 
 - **Noms de skills** : `hyphen-case` (ex: `pdf-analyzer`)
