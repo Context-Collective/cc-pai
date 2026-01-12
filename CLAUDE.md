@@ -1,10 +1,25 @@
 # cc-pai
 
-cc-pai est une PAI (Personal AI) open source développée par Context Collective.
+Tu es ma PAI (Personal AI Infrastructure).
+
+## Mon Contexte
+
+Mon contexte personnel est dans `pai/context/`. Lis-le et utilise-le pour personnaliser tes réponses.
+
+- `pai/context/ME.md` - Qui je suis, mes objectifs, mes méthodes
+- `pai/state/CURRENT.md` - Sur quoi je travaille actuellement
+
+Si ces fichiers n'existent pas, propose d'initialiser la PAI avec le skill `pai-init`.
+
+## Mémoire
+
+Les sessions passées et apprentissages sont dans `pai/memory/`.
 
 ## Skills
 
-Les skills sont dans `.claude/skills/`. Chaque skill a un fichier `SKILL.md` avec :
+Les skills sont dans `pai/skills/` (symlinké dans `.claude/skills/`).
+
+Chaque skill a un fichier `SKILL.md` avec :
 - **Frontmatter YAML** : `name` et `description` (détermine quand utiliser le skill)
 - **Body** : Instructions d'utilisation
 
@@ -13,20 +28,43 @@ Les skills sont dans `.claude/skills/`. Chaque skill a un fichier `SKILL.md` ave
 **Quand l'utiliser :** L'utilisateur veut créer, modifier ou comprendre un skill.
 
 **Comment l'utiliser :**
-1. Lis `.claude/skills/skill-creator/SKILL.md` pour comprendre le processus
-2. Utilise `.claude/skills/skill-creator/scripts/init_skill.py` pour créer la structure :
+1. Lis `pai/skills/skill-creator/SKILL.md` pour comprendre le processus
+2. Utilise `pai/skills/skill-creator/scripts/init_skill.py` pour créer la structure :
    ```bash
-   python3 .claude/skills/skill-creator/scripts/init_skill.py <nom-skill> --path .claude/skills/
+   python3 pai/skills/skill-creator/scripts/init_skill.py <nom-skill> --path pai/skills/
    ```
 3. Complète le `SKILL.md` généré avec l'utilisateur
 4. Valide avec `quick_validate.py` avant de finaliser
 
-**Références utiles :**
-- `.claude/skills/skill-creator/references/workflows.md` : Patterns de workflows
-- `.claude/skills/skill-creator/references/output-patterns.md` : Patterns de sortie
+### pai-init
+
+**Quand l'utiliser :** L'utilisateur veut initialiser ou configurer sa PAI.
+
+**Déclencheurs :** "initialise ma PAI", "configure ma PAI", "pai init"
+
+### memory-manager
+
+**Quand l'utiliser :** L'utilisateur veut voir ou récupérer des sessions non mémorisées.
+
+**Déclencheurs :** "gérer ma mémoire", "quelles sessions ne sont pas en mémoire ?", "sessions manquantes"
+
+### project-context
+
+**Quand l'utiliser :** L'utilisateur veut reprendre le contexte d'un projet depuis la mémoire.
+
+**Déclencheurs :** "reprends [projet]", "contexte [projet]", "on en était où", "résume le projet"
+
+**Comment l'utiliser :**
+1. Identifie le projet (nom donné ou dossier courant)
+2. Cherche les sessions liées dans `pai/memory/sessions/`
+3. Synthétise : état actuel, décisions, actions en suspens
 
 ## Conventions
 
 - **Noms de skills** : `hyphen-case` (ex: `pdf-analyzer`)
 - **Langue code** : anglais
 - **Langue docs utilisateur** : français
+
+## Ressources utiles
+
+- **DeepWiki** : Pour explorer des repos GitHub, utilise `https://deepwiki.com/{owner}/{repo}` - donne une vue structurée et documentée du projet

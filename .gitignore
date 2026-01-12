@@ -49,5 +49,9 @@ Thumbs.db
 *.log
 logs/
 
-# User data (if added later)
-USER/
+# PAI Instance (personnel - ne pas versionner)
+pai/context/ME.md
+pai/state/CURRENT.md
+pai/memory/**/*
+!pai/memory/.gitkeep
+!pai/memory/sessions/.gitkeep
