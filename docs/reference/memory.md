@@ -140,5 +140,5 @@ Le skill liste les sessions des 3 derniers jours non mémorisées et permet de l
 
 - `/clear` ne déclenche pas la capture automatique (utiliser `memory-manager` pour rattraper)
 - Dépend de Claude Code headless (doit être installé)
-- Nécessite `jq` pour parser le JSON
+- Nécessite `jq` pour le hook de capture (bash)
 - Timeout de 60 secondes pour le résumé

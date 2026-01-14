@@ -16,6 +16,9 @@ Sans PAI, chaque session Claude repart de zéro. Avec une PAI, Claude est ton as
 - [Claude Code](https://claude.ai/code) installé
 - Python 3.8+ (pour les scripts des skills)
 - Git
+- `jq` (optionnel, pour les hooks statusline et memory-capture)
+
+> **Note :** `jq` n'est pas requis pour les skills. Claude parse le JSON directement.
 
 ## Installation
 

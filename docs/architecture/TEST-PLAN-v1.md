@@ -8,7 +8,7 @@
 
 - [ ] Claude Code installé et fonctionnel
 - [ ] Python 3.8+ disponible
-- [ ] `jq` installé (pour les hooks)
+- [ ] `jq` installé (pour les hooks statusline et memory-capture, optionnel sinon)
 
 ---
 
